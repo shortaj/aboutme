@@ -3,16 +3,16 @@
 var userName = prompt('What\'s your name?');
 alert ('Hi, ' + userName + '! Welcome to my about me page.');
 
-function answers(q) {
+function answers(correctAnswers) {
 
-  q = 0;
+  correctAnswers = 0;
 
   var pet = prompt('Do you think I have a dog?').toUpperCase();
   if (pet === 'YES') {
     alert('Correct! I have a dog named Vincent.');
-    q++;
-    alert('Your score is now ' + q + ' out of 5.');
-    console.log(q);
+    correctAnswers++;
+    alert('Your score is now ' + correctAnswers + ' out of 5.');
+    console.log(correctAnswers);
   } else if (pet === 'NO') {
     alert('False! I have a dog named Vincent.');
   } else {
@@ -25,8 +25,8 @@ function answers(q) {
     var diet = prompt('Am I a vegan?').toUpperCase();
     if (diet === 'YES') {
       alert('You are right!');
-      q++;
-      alert('Your score is now ' + q + ' out of 5.');
+      correctAnswers++;
+      alert('Your score is now ' + correctAnswers + ' out of 5.');
     } else if (diet === 'NO') {
       alert('False!');
     } else {
@@ -39,8 +39,8 @@ function answers(q) {
     var homeState = prompt('True or false: I am from Montana.').toUpperCase();
     if (homeState === 'TRUE') {
       alert('You are correct!');
-      q++;
-      alert('Your score is now ' + q + ' out of 5.');
+      correctAnswers++;
+      alert('Your score is now ' + correctAnswers + ' out of 5.');
     } else if (homeState === 'FALSE') {
       alert('Incorrect!');
     } else {
@@ -53,12 +53,12 @@ function answers(q) {
     var computer = prompt('Do you think I\'m an Apple person?').toUpperCase();
     if (computer === 'YES') {
       alert('False! I am a Windows girl.');
-      q++;
-      alert('Your score is now ' + q + ' out of 5.');
+      correctAnswers++;
+      alert('Your score is now ' + correctAnswers + ' out of 5.');
     } else if (computer === 'NO') {
       alert('True! I prefer Windows.');
     } else {
-      alert('I didn\'t quite understand that answer.');
+      alert('I didn\'t correctAnswersuite understand that answer.');
     }
 
     console.log('Do you think I\'m an Apple person?');
@@ -69,8 +69,8 @@ function answers(q) {
       alert('False, I prefer Android phones.');
     } else if (phone === 'YES') {
       alert('Correct!');
-      q++;
-      alert('Your score is now ' + q + ' out of 5.');
+      correctAnswers++;
+      alert('Your score is now ' + correctAnswers + ' out of 5.');
     } else {
       alert('That answer didn\'t make sense.')
     }
@@ -78,7 +78,10 @@ function answers(q) {
     console.log('Do you think I have an Android phone?');
     console.log(phone);
 
-  alert('Your final score is ' + q + ' out of 5.');
+  alert('Your final score is ' + correctAnswers + ' out of 5.');
+
+  console.log('Final score: ' + correctAnswers);
 }
+
 
 answers();
