@@ -83,5 +83,32 @@ function answers(correctAnswers) {
   console.log('Final score: ' + correctAnswers);
 }
 
+var numberGuess = prompt('Let\'s play a number guessing game! What number am I thinking of?');
+var userAnswer = numberGuess;
+var numberGuess = 0;
+
+while(numberGuess < 4) {
+  if (parseInt(userAnswer) === 32 ) {
+    alert('Correct!');
+    prompt('You got the right answer!');
+  } else if (parseInt(userAnswer) > 32) {
+    numberGuess++;
+    alert('Too high. This is the ' + numberGuess + '/4 attempts.');
+    var numberGuess = prompt('Guess again?');
+  } else if (parseInt(userAnswer) < 32){
+    numberGuess++;
+    alert('Too low. This is the ' + numberGuess + '/4 attempts.');
+    var numberGuess = prompt('Guess again?');
+  } else if (userAnswer === null) {
+    alert('Please play the game.');
+  } else {
+    alert('Numbers please.')
+    numberGuess++;
+  }
+}
+
+
+
+
 
 answers();
