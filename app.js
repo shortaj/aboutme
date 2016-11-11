@@ -7,6 +7,21 @@ function answers(correctAnswers) {
 
   correctAnswers = 0;
 
+  var questionsArray = ['Do you think I have a dog?', 'Am I a vegan?', 'Ture or false: I am from Montana.', 'Do you think I\'m an apple person?', 'Do you think I have an Android phone?'];
+  var answersArray = ['Correct! I have a dog named Vincent.', 'You are right!', 'You are correct!', 'True! I am a Windows person.', 'Correct!'];
+  var invalidAnswer = 'I didn\'t understand your answer.';
+  var incorrectAnswersArray = ['False, I have a dog named Vincent.', 'False!', 'Incorrect!', 'False! I prefer Windows.', 'False! I like Android phones.'];
+
+  var isAnswerCorrect = [];
+
+  var correctAnswerFunction function() {
+
+  };
+
+  var incorrectAnswerFunction function () {
+
+  };
+
 
   var pet = prompt('Do you think I have a dog?').toUpperCase();
   if (pet === 'YES') {
@@ -59,7 +74,7 @@ function answers(correctAnswers) {
     } else if (computer === 'NO') {
       alert('False! I am a Windows girl.');
     } else {
-      alert('I didn\'t correctAnswersuite understand that answer.');
+      alert('I didn\'t quite understand that answer.');
     }
 
     console.log('Do you think I\'m an Apple person?');
